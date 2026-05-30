@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build RPG",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "combat.c",
+                "-o",
+                "rpg.exe"
+            ]
+        },
+        {
+            "label": "Run RPG",
+            "type": "shell",
+            "command": ".\\rpg.exe",
+            "dependsOn": "Build RPG"
+        }
+    ]
+}
